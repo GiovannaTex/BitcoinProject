@@ -80,9 +80,11 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
                     
                     let formatter = NumberFormatter()
                     
-                    formatter.numberStyle = .currency
+                    formatter.numberStyle = .decimal
+                    formatter.maximumFractionDigits = 2
+                    formatter.decimalSeparator = ","
+                    formatter.groupingSeparator = "."
                     
-                    formatter.locale = Locale(identifier: "pt_BR")
 
                     let askvalueString = formatter.string(from: askValue)
 

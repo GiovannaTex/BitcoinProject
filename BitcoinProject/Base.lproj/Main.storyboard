@@ -17,46 +17,61 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nGT-v4-VzB">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5b6-iI-Gwb">
-                                        <rect key="frame" x="0.0" y="274" width="390" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zpD-1G-AcX" userLabel="Bitcoin View">
+                                        <rect key="frame" x="8" y="0.0" width="374" height="140"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoin" translatesAutoresizingMaskIntoConstraints="NO" id="pBj-fz-rIr">
+                                                <rect key="frame" x="-69" y="5" width="512" height="130"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="130" id="dsS-Bp-HNz"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="pBj-fz-rIr" firstAttribute="centerY" secondItem="zpD-1G-AcX" secondAttribute="centerY" id="9Zi-Yr-3Ym"/>
+                                            <constraint firstItem="pBj-fz-rIr" firstAttribute="centerX" secondItem="zpD-1G-AcX" secondAttribute="centerX" id="Ybf-bl-Sgb"/>
+                                            <constraint firstAttribute="height" constant="140" id="eus-VO-V9K"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5b6-iI-Gwb">
+                                        <rect key="frame" x="0.0" y="140" width="390" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="F49-MV-pCn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <color key="textColor" systemColor="systemOrangeColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LF2-5G-321">
-                                        <rect key="frame" x="0.0" y="335" width="390" height="401"/>
-                                    </pickerView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoin" translatesAutoresizingMaskIntoConstraints="NO" id="pBj-fz-rIr">
-                                        <rect key="frame" x="67" y="64" width="256" height="200"/>
+                                        <rect key="frame" x="0.0" y="626" width="390" height="140"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="200" id="pIi-Uy-B7J"/>
+                                            <constraint firstAttribute="height" constant="140" id="eyl-ZD-5fv"/>
                                         </constraints>
-                                    </imageView>
+                                    </pickerView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.68819865930000002" green="1" blue="0.6247517802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="LF2-5G-321" firstAttribute="leading" secondItem="nGT-v4-VzB" secondAttribute="leading" id="9Ep-0y-Uxt"/>
-                                    <constraint firstItem="LF2-5G-321" firstAttribute="top" secondItem="5b6-iI-Gwb" secondAttribute="bottom" constant="25" id="N8l-dl-ayE"/>
-                                    <constraint firstItem="5b6-iI-Gwb" firstAttribute="leading" secondItem="nGT-v4-VzB" secondAttribute="leading" id="WXU-JB-ezo"/>
-                                    <constraint firstAttribute="trailing" secondItem="5b6-iI-Gwb" secondAttribute="trailing" id="a12-zg-Jx1"/>
-                                    <constraint firstAttribute="bottom" secondItem="LF2-5G-321" secondAttribute="bottom" constant="108" id="pBc-dy-RdD"/>
-                                    <constraint firstAttribute="trailing" secondItem="LF2-5G-321" secondAttribute="trailing" id="qbW-S1-sgz"/>
+                                    <constraint firstItem="LF2-5G-321" firstAttribute="leading" secondItem="nGT-v4-VzB" secondAttribute="leading" id="JVv-33-mfW"/>
+                                    <constraint firstAttribute="trailing" secondItem="LF2-5G-321" secondAttribute="trailing" id="T2a-aa-AZy"/>
+                                    <constraint firstItem="zpD-1G-AcX" firstAttribute="leading" secondItem="nGT-v4-VzB" secondAttribute="leading" constant="8" id="UAe-sQ-bj3"/>
+                                    <constraint firstItem="5b6-iI-Gwb" firstAttribute="top" secondItem="zpD-1G-AcX" secondAttribute="bottom" id="aZF-eX-0eY"/>
+                                    <constraint firstAttribute="trailing" secondItem="zpD-1G-AcX" secondAttribute="trailing" constant="8" id="oC0-gw-xZn"/>
+                                    <constraint firstItem="zpD-1G-AcX" firstAttribute="top" secondItem="nGT-v4-VzB" secondAttribute="top" id="piI-sL-G0z"/>
+                                    <constraint firstAttribute="trailing" secondItem="5b6-iI-Gwb" secondAttribute="trailing" id="rG5-MM-JxC"/>
+                                    <constraint firstAttribute="bottom" secondItem="LF2-5G-321" secondAttribute="bottom" id="sc5-wy-D1c"/>
+                                    <constraint firstItem="5b6-iI-Gwb" firstAttribute="leading" secondItem="nGT-v4-VzB" secondAttribute="leading" id="tSd-fU-oPH"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="5b6-iI-Gwb" firstAttribute="top" secondItem="pBj-fz-rIr" secondAttribute="bottom" constant="10" id="8a6-ao-7Fr"/>
-                            <constraint firstItem="nGT-v4-VzB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SK5-eP-pao"/>
-                            <constraint firstItem="nGT-v4-VzB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="T00-oZ-Beg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nGT-v4-VzB" secondAttribute="trailing" id="aLr-r1-40b"/>
-                            <constraint firstItem="pBj-fz-rIr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="jfp-as-qZf"/>
-                            <constraint firstAttribute="bottom" secondItem="nGT-v4-VzB" secondAttribute="bottom" id="ns1-W7-RRH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pBj-fz-rIr" secondAttribute="trailing" constant="67" id="qsp-5J-sR4"/>
-                            <constraint firstItem="pBj-fz-rIr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="tO0-hc-mVl"/>
+                            <constraint firstItem="nGT-v4-VzB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MCA-Oq-aqg"/>
+                            <constraint firstItem="nGT-v4-VzB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lM3-9v-WHp"/>
+                            <constraint firstItem="nGT-v4-VzB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="muF-ti-WQj"/>
+                            <constraint firstItem="nGT-v4-VzB" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="xR6-jw-Y6g"/>
                         </constraints>
                     </view>
                     <connections>
@@ -66,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1898" y="-236"/>
+            <point key="canvasLocation" x="-1898.4615384615383" y="-236.01895734597156"/>
         </scene>
     </scenes>
     <resources>
